@@ -1,6 +1,6 @@
 ### Sample impact of 100ms sync call on performance of requests in tokio
 
-The numbers will vary by hardware and are meant for only
+The numbers will vary by hardware and are meant for comparison only
 
     ulimit -n 10000
     cargo run --release
