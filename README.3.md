@@ -1,6 +1,8 @@
 ### The story of three tokio sleeps
 
-The numbers will vary by hardware and are meant for only.
+See the source [here](src/main.rs)
+
+The numbers will vary by hardware and are meant for comparison only.
 
 Sleep duration was 100ms
 
@@ -76,4 +78,4 @@ Shortest transaction:	        0.12
 There was no meaningful difference between the async version and tokio::spawn_blocking version. In fact the spawn_blocking version performed little better, which is strange given that it has the overhead of spawning threads.
 If I had to speculate tokio used a thread pool of some kind.
 
-The sync_sleep was a failure as was expected. Where the other two endpoints managed to serve 16K+ requests. sync sleep only managed 179.
+The sync_sleep was a failure as was expected. Where the other two endpoints managed to serve 16K+ requests. sync_sleep only managed 179.
